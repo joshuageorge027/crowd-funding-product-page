@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green-400: hsl(176, 50%, 47%);
+  --Green-700: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Gray-500: hsl(0, 0%, 48%);
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+  /* height: 120vh; */
+}
+
+.header {
+  background: url("./images/image-hero-desktop.jpg") no-repeat;
+  object-fit: cover;
+  height: 60vh;
+  /* display: flex; */
+}
+
+.logo-and-links {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 300px; */
+  padding: 2rem 3.5rem;
+}
+
+#overlay{
+  display: none;
+}
+
+
+.ham-container{
+  display: none;
+}
+
+.logo-and-links img {
+  height: 23px;
+  width: 150px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+.list li {
+  list-style-type: none;
+}
+
+.list a {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+}
+
+.mastercraft-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.mastercraft {
+  width: 50%;
+  margin-top: -80px;
+  background-color: white;
+  border-radius: 9px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.logo-mastercraft {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.text h1 {
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.button-bookmark {
+  display: flex;
+  margin: 1.5rem 0;
+  justify-content: space-between;
+  gap: 270px;
+}
+
+.first {
+  height: 40px;
+  color: white;
+  padding: 0 2rem;
+  background-color: var(--Green-400);
+  border-radius: 20px;
+  border: none;
+}
+
+.second {
+  height: 40px;
+  color: var(--Black);
+  padding: 10px 0 20px 0;
+  width: 130px;
+  background-color: rgb(170, 166, 166);
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  gap: 10px;
+}
+
+.second img {
+  background-color: var(--Black);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -10px 0 0 0;
+}
+
+.numbers {
+  width: 50%;
+  background-color: white;
+  padding: 2rem 1.7rem;
+}
+
+.starter-stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.stat h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.bar {
+  height: 8px;
+  background-color: rgb(212, 209, 209);
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 1rem 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--Green-400);
+  width: 70%;
+  border-radius: 10px;
+}
+
+.third-box {
+  background-color: white;
+  width: 50%;
+  padding: 1.5rem 1.7rem;
+  margin: 0 0 5rem 0;
+}
+.about-project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-project h2 {
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.about-project p {
+  color: var(--Gray-500);
+}
+
+.bamboo-stand {
+  border: 1px solid rgb(212, 209, 209);
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+}
+
+.bamboo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.bamboo h2 {
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.bamboo p {
+  color: var(--Green-400);
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.stand-p {
+  color: var(--Gray-500);
+}
+
+.button-time {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+
+.button-time button {
+  background-color: var(--Green-400);
+  height: 40px;
+  border: none;
+  padding: 0 2rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.black-edition {
+  border: 1px solid rgb(212, 209, 209);
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+}
+
+.Edition {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.Edition h2 {
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.Edition p {
+  color: var(--Green-400);
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.edition-p {
+  color: var(--Gray-500);
+}
+
+span {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.Special-Edition {
+  border: 1px solid rgb(212, 209, 209);
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+}
+
+.special {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.special h2 {
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: var(--Gray-500);
+}
+
+.special p {
+  color: hsl(177, 58%, 82%);
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.special-p {
+  color: rgb(163, 163, 163);
+}
+
+.out-of-stock {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.out-of-stock h1 {
+  color: var(--Gray-500);
+}
+
+.out-of-stock button {
+  background-color: rgb(155, 154, 154);
+  height: 40px;
+  border: none;
+  padding: 0 2rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bookmark {
+  display: none;
+}
+
+#close-btn {
+    display: none;
+  }
+
+
+/* MEDIA QUERY */
+/* MOBILE DESIGN */
+@media screen and (max-width: 768px) {
+  .header {
+    background: url("./images/image-hero-mobile.jpg") no-repeat;
+    background-size: 100%;
+    height: 50vh;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo-and-links {
+    display: flex;
+    padding: 1rem 1rem;
+  }
+
+  .logo-and-links img {
+    z-index: 1000;
+    position: relative;
+  }
+
+  .mastercraft {
+    width: 85%;
+    margin-top: -130px;
+    background-color: white;
+    border-radius: 9px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+
+  .logo-mastercraft {
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    transform: translate(-50% -50%);
+  }
+
+  .ham-container {
+    width: 30px;
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #list {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0, 0.5);
+    flex-direction: column;
+    z-index: 1000;
+    width: 300px;
+    padding: 1.5rem 1rem;
+    /* height: 200px; */
+    border-radius: 10px;
+    /* color: black; */
+  }
+
+  #list li {
+    margin: 20px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(148, 148, 148);
+  }
+
+  #list a:hover {
+    color: #555;
+  }
+
+  #list a:focus {
+    color: #555;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 500;
+  }
+
+  #close-btn {
+    width: 25px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    position: relative;
+  }
+
+  #list a {
+    color: var(--Black);
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px 0;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text h1 {
+    line-height: 1.5rem;
+  }
+
+  .text p {
+    line-height: 1.5rem;
+    font-size: 19px;
+    color: var(--Gray-500);
+  }
+
+  .first {
+    margin: 10px 0 0 0;
+  }
+
+  .button-bookmark {
+    display: flex;
+    gap: 10px;
+  }
+
+  .second {
+    display: none;
+  }
+
+  .bookmark {
+    display: flex;
+  }
+
+  .numbers {
+    width: 85%;
+    border-radius: 8px;
+    background-color: white;
+    padding: 2rem 1.7rem;
+  }
+
+  .starter-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-between; */
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .third-box {
+    background-color: white;
+    width: 85%;
+    padding: 1.5rem 1.7rem;
+    margin: 0 0 5rem 0;
+  }
+
+  .bamboo,
+  .Edition,
+  .special {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .button-time {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-time button {
+    width: 60%;
+    padding: 0;
+  }
+
+  .out-of-stock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .out-of-stock button {
+    width: 60%;
+    padding: 0;
+  }
+}
